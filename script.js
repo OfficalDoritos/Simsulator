@@ -1,1 +1,5 @@
-console.log("guh");
+$("img").draggable();
+
+var hit = () => {
+  $("img").effect("explode");
+};
