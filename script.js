@@ -1,1 +1,1 @@
-const canvas = $("canvas");
+console.log("guh");
