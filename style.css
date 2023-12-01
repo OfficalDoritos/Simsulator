@@ -3,6 +3,11 @@ body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
+img {
+  width: 150px;
+  height: 150px;
+}
+
 #topBar {
   background-color: #322e2f;
   border-radius: 1rem;
