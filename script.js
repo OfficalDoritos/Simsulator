@@ -6,12 +6,15 @@ window.onbeforeunload = function () {
 };
 */
 
-var hit = () => {
-  var uh = $("<img>");
-  uh.draggable();
-  var lunk = $("#thisone").val();
-  uh.attr("src", lunk);
-  $("#box").append(uh);
+var yur = () => {
+  var img = $("<img>");
+  var target = $("#target");
+  img.attr("src", "./Sims4Icons/" + target.val() + ".png");
+  var cage = $("<div class=imgContainer>");
+  cage.draggable();
+  cage.resizable();
+  cage.append(img);
+  $("#box").append(cage);
 };
 
 var yike = () => {
