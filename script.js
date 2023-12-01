@@ -1,4 +1,6 @@
-document.addEventListener("paste", function (evt) {
+const canvas = $("canvas");
+
+canvas.addEventListener("paste", function (evt) {
   const clipboardItems = evt.clipboardData.items;
   const items = [].slice.call(clipboardItems).filter(function (item) {
     // Filter the image items only
@@ -12,6 +14,7 @@ document.addEventListener("paste", function (evt) {
   const blob = item.getAsFile();
 
   var img = $("<img id=image>");
-  $("body").append(img);
+  canvas.append(img);
   img.attr("src", URL.createObjectURL(blob));
+  img.attr("draggable", true);
 });

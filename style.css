@@ -3,89 +3,9 @@ body {
   font-family: "Comic Sans MS", "Comic Sans", cursive;
 }
 
-.tempContainer {
-  float: right;
-  outline: solid #322e2f;
-  border-radius: 1rem;
-  width: 150px;
-  height: 150px;
-  text-align: center;
-}
-
-/* Navbar container */
-.navbar {
-  overflow: hidden;
+#topBar {
   background-color: #322e2f;
   border-radius: 1rem;
-  width: fit-content;
-  justify-content: space-around;
-}
-
-/* Links inside the navbar */
-.navbar a {
-  float: left;
-  font-size: 16px;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-/* The dropdown container */
-.dropdown {
-  float: left;
-  overflow: hidden;
-  border-radius: 1rem;
-}
-
-/* Dropdown button */
-.dropdown .dropbtn {
-  font-size: 16px;
-  border-radius: 1rem;
-  border: none;
-  outline: none;
-  color: white;
-  padding: 14px 16px;
-  background-color: inherit;
-  font-family: inherit; /* Important for vertical align on mobile phones */
-  margin: 0; /* Important for vertical align on mobile phones */
-}
-
-/* Add a red background color to navbar links on hover */
-.navbar a:hover,
-.dropdown:hover .dropbtn {
-  background-color: lightskyblue;
-}
-
-/* Dropdown content (hidden by default) */
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-  border-radius: 1rem;
-}
-
-/* Links inside the dropdown */
-.dropdown-content a {
-  top: 1rem;
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-  border-radius: 1rem;
-}
-
-/* Add a grey background color to dropdown links on hover */
-.dropdown-content a:hover {
-  background-color: #ddd;
-}
-
-/* Show the dropdown menu on hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+  margin: 1rem;
+  height: 5rem;
 }
