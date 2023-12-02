@@ -18,11 +18,40 @@
 	<div id="topBar">
 		<input type="text" placeholder="..." id="urls">
 		<button onclick="newImgByText()">Add image</button>
-		<button onclick="newArrow()">arrow</button>
-		<button onclick="newImgByPath('BagHead')">Bag</button>
-		<button onclick="newImgByPath('Cyclops')">guy</button>
-		<button onclick="newImgByPath('WeddingChain')">the wife</button>
-		<button onclick="newImgByPath('Silhouette2')">???</button>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">Arrows</button>
+			<div id="myDropdown" class="dropdown-content">
+				<button onclick="newArrow()">arrow</button>
+			</div>
+		</div>
+		<div class="dropdown">
+			<button onclick="myFunction()" class="dropbtn">People</button>
+			<div id="myDropdown" class="dropdown-content">
+				<button onclick="newImgByPath('BagHead')">Bag</button>
+				<button onclick="newImgByPath('Cyclops')">guy</button>
+				<button onclick="newImgByPath('Silhouette2')">???</button>
+
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Happy</button>
+			<div class="dropdown-content">
+
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">Sex</button>
+			<div class="dropdown-content">
+
+			</div>
+		</div>
+		<div class="dropdown">
+			<button class="dropbtn">war</button>
+			<div class="dropdown-content">
+				<button onclick="newImgByPath('WeddingChain')">the wife</button>
+
+			</div>
+		</div>
 	</div>
 
 	<div id="box" class="box">
