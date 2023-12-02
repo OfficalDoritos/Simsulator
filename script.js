@@ -1,10 +1,10 @@
 /* 
 safety pop up
 disabled for development
+*/
 window.onbeforeunload = function () {
   return "Data will be lost if you leave the page, are you sure?";
 };
-*/
 
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("paste", function (evt) {
