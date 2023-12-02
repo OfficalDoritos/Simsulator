@@ -6,8 +6,37 @@ window.onbeforeunload = function () {
 };
 */
 
-var newImg = (type) => {
-  var img = $("<img src='./Sims4Icons/" + type + ".png'>");
+document.addEventListener("DOMContentLoaded", function () {
+  document.addEventListener("paste", function (evt) {
+    const clipboardItems = evt.clipboardData.items;
+    const items = [].slice.call(clipboardItems).filter(function (item) {
+      // Filter the image items only
+      return item.type.indexOf("image") !== -1;
+    });
+    if (items.length === 0) {
+      return;
+    }
+
+    const item = items[0];
+    const blob = item.getAsFile();
+    var link = URL.createObjectURL(blob);
+
+    newImg(link);
+  });
+});
+
+var newImgByText = () => {
+  newImgByPath($("#urls").val());
+};
+
+var newImgByPath = (a) => {
+  var src = "./Sims4Icons/" + a + ".png";
+  newImg(src);
+};
+
+var newImg = (src) => {
+  var img = $("<img>");
+  img.attr("src", src);
   var cage = $("<div class=imgContainer>");
   cage.append(img);
   cage.draggable({

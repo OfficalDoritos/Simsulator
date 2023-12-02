@@ -6,7 +6,7 @@
 	<meta http-equiv='X-UA-Compatible' content='IE=edge' />
 	<meta name='viewport' content='width=device-width, initial-scale=1.0' />
 	<title>Simsulator</title>
-	<link rel="icon" type="image/x-icon" href="./download.png">
+	<link rel="icon" type="image/x-icon" href="./favicon.ico">
 	<link rel='stylesheet' href='style.css' />
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="https://code.jquery.com/ui/1.13.1/jquery-ui.min.js"></script>
@@ -16,11 +16,13 @@
 <body>
 
 	<div id="topBar">
+		<input type="text" placeholder="..." id="urls">
+		<button onclick="newImgByText()">Add image</button>
 		<button onclick="newArrow()">arrow</button>
-		<button onclick="newImg('Ant')">ant</button>
-		<button onclick="newImg('Ant')">guy</button>
-		<button onclick="newImg('Ant')">bag</button>
-		<button onclick="newImg('Ant')">???</button>
+		<button onclick="newImgByPath('BagHead')">Bag</button>
+		<button onclick="newImgByPath('Cyclops')">guy</button>
+		<button onclick="newImgByPath('WeddingChain')">the wife</button>
+		<button onclick="newImgByPath('Silhouette2')">???</button>
 	</div>
 
 	<div id="box" class="box">
