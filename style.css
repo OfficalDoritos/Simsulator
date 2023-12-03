@@ -93,3 +93,8 @@ button {
 .dropdown:hover .dropdown-content {
   display: flex;
 }
+
+#urls {
+  border-radius: 1rem;
+  font-size: 1.5rem;
+}
