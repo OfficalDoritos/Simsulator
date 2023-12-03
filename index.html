@@ -17,13 +17,14 @@
 
 	<div id="topBar">
 		<input type="text" placeholder="..." id="urls">
-		<button onclick="newImgByText()">+</button>
+		<button onclick="newImgByText()"> + </button>
 		<div class="dropdown">
-			<button onclick="myFunction()" class="dropbtn">Shapes</button>
+			<button onclick="myFunction()" class="dropbtn">Arrows</button>
 			<div id="myDropdown" class="dropdown-content">
-				<button onclick="newShape('VerticalLine')">Vertical Line</button>
-				<button onclick="newShape('HorizontalLine')">Horizontal Line</button>
-				<button onclick="newArrow()">Arrow</button>
+				<button onclick="newArrow('LeftArrow')">Left</button>
+				<button onclick="newArrow('RightArrow')">Right</button>
+				<button onclick="newArrow('UpArrow')">Up</button>
+				<button onclick="newArrow('DownArrow')">Down</button>
 			</div>
 		</div>
 		<div class="dropdown">

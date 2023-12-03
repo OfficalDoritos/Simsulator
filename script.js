@@ -47,13 +47,10 @@ var newImg = (src) => {
   $("#box").append(cage);
 };
 
-var newShape = (name) => {
-  var src = "./shapes/" + name + ".png";
-  newImg(src);
-};
-
-var newArrow = () => {
-  var arrow = $("<img src='./Arrow.png'>");
+var newArrow = (dir) => {
+  var arrow = $("<img>");
+  var src = "./" + dir + ".png";
+  arrow.attr("src", src);
   var quiver = $("<div class=quiver>");
   //suck my ass bitch I absolutely named the container for my arrows "quiver"
   //and YES I did steal this idea from a joke Harley Quinn made in Injustice year one
