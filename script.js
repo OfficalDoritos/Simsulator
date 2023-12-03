@@ -1,11 +1,11 @@
 /* 
 safety pop up
 disabled for development
-*/
+
 window.onbeforeunload = function () {
   return "Data will be lost if you leave the page, are you sure?";
 };
-
+*/
 document.addEventListener("DOMContentLoaded", function () {
   document.addEventListener("paste", function (evt) {
     const clipboardItems = evt.clipboardData.items;
@@ -47,8 +47,13 @@ var newImg = (src) => {
   $("#box").append(cage);
 };
 
+var newShape = (name) => {
+  var src = "./shapes/" + name + ".png";
+  newImg(src);
+};
+
 var newArrow = () => {
-  var arrow = $("<img src='./arrow.png'>");
+  var arrow = $("<img src='./Arrow.png'>");
   var quiver = $("<div class=quiver>");
   //suck my ass bitch I absolutely named the container for my arrows "quiver"
   //and YES I did steal this idea from a joke Harley Quinn made in Injustice year one
